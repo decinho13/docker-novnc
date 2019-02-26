@@ -11,7 +11,7 @@ RUN source /opt/ros/kinetic/setup.bash && \
     git clone -b F_add_moveit_funtionallity https://github.com/shadow-robot/gazebo2rviz.git && \
     git clone -b kinetic-devel https://github.com/shadow-robot/universal_robot.git && \
     git clone -b kinetic-devel  https://github.com/shadow-robot/ros_controllers.git && \
-    cd /workspace/src
+    cd /workspace/src\
     rosdep install --default-yes --all --ignore-src && \
     catkin build --cmake-args -DCMAKE_BUILD_TYPE=Release
 
