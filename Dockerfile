@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM osrf/ros:kinetic-desktop-full
 
 # Install git, supervisor, VNC, & X11 packages
 RUN set -ex; \
