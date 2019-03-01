@@ -26,6 +26,7 @@ ENV HOME=/root \
     DISPLAY_HEIGHT=768 \
     RUN_XTERM=yes \
     RUN_FLUXBOX=yes
+RUN apt-get install -y ros-kinetic-moveit
 COPY . /app
 CMD ["/app/entrypoint.sh"]
 EXPOSE 7000
