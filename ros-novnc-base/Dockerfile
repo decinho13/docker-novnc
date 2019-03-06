@@ -43,5 +43,5 @@ RUN source "/workspace/devel/setup.bash" &&\
     source "/usr/share/gazebo/setup.sh"
 RUN cd /root/gzweb && ./deploy.sh
 COPY . /app
-CMD ["/app/entrypoint.sh"]
+CMD ["sudo","bash","/app/entrypoint.sh"]
 EXPOSE 7000 8080
